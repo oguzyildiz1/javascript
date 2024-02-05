@@ -1,1 +1,1 @@
-# javascript
+# javascript genel çalışma
