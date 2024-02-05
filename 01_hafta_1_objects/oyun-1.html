@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {}
+
+        div.main-container {
+            width: 1000px;
+            height: 500px;
+            border: 10px solid gray;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Oyun 1</h1>
+    <lable for="oyun1">Kutularla oynanan bir oyun</lable>
+    <div id="oyun1" class="main-container">
+
+
+    </div>
+
+    <script>
+
+        // bir div oluşturacağız
+        // bu divin width, height değerlerini obje olarak kaydedeceğiz
+
+        var oyun = {}
+
+        oyun.kare = {
+            gen: 50,
+            yuk: 50,
+        }
+
+        oyun.olustur = function () {
+            // create a div with kare values
+            oyun_container = document.getElementsByClassName("main-container");
+
+            kare1 = document.createElement("div");
+            kare1.width = this.gen + "px";
+            kare1.height = this.yuk + "px   ";
+            kare1.style.border = "1px solid red";
+
+            oyun_container[0].append(kare1);
+        }
+
+        console.log(oyun)
+        oyun.olustur()
+
+
+    </script>
+</body>
+
+</html>

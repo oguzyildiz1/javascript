@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var div1 = document.createElement("div");
+        var body1 = document.getElementsByTagName("body")[0];
+
+        var oyun = {}
+
+        oyun.kare = {
+            gen: 250,
+            yuk: 250,
+        }
+
+        oyun.change = function () {
+            width1 = this.kare.yuk + "px";
+            heigth1 = this.kare.gen + "px";
+
+            div1.style.width = width1;
+            body1.append(div1);
+        }
+
+        oyun.print1 = function () {
+            return this.kare.gen + " " + this.kare.yuk;
+        }
+
+        console.log(oyun.print1());
+        oyun.change();
+    </script>
+
+</body>
+
+</html>
