@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+        div {
+            height: 50px;
+            width: 50px;
+            border: 1px dotted #999;
+            background: yellow;
+        }
+
+        #x {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #444;
+            background: #900;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="x"></div>
+
+    <script>
+        var x = 5;
+        function yaz(mesaj = x, htmlTag = "<br />") {
+            document.write(mesaj + htmlTag);
+        }
+
+        yaz("Merhaba Emre");
+        yaz("Merhaba Altuğ",);
+        yaz("Hello world!", "<br /><pre>");
+        yaz("Nasilsiniz", "</pre>");
+
+        // function renk() {
+        //     var renk = "#" + (Math.floor(Math.random() * 900) + 100);
+        //     document.querySelector("div#x").style.background = renk;
+        // }
+
+        // setInterval(renk, 2000);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

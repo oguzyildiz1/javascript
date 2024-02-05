@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var myObject = {
+            value: 0,
+            increment: function (inc) {
+                this.value += typeof inc === 'number' ? inc : 1;
+            }
+        }
+
+        myObject.increment(5);
+        document.write(myObject.value);
+
+    </script>
+
+</body>
+
+</html>

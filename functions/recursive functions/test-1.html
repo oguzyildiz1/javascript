@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Functions</title>
+</head>
+
+<body>
+
+    <script>
+
+        function dongu(sayac = 0, end = 10) {
+            document.write(sayac + ".dongu<br />");
+            sayac++;
+            if (sayac < end) {
+                dongu(sayac, end);
+            }
+        }
+
+        dongu(5, 21);
+
+        // for (let sayac = 0; sayac < 10; sayac++) {
+        //     document.write(sayac + ". döngü<br />");
+
+        // }
+
+    </script>
+</body>
+
+</html>

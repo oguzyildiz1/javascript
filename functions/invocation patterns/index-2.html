@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var myCar = {
+            value: 15000,
+            model: "BMW",
+            increment: function (inc) {
+                this.value = inc;
+            },
+            changeModel: function (mod) {
+                this.model = mod;
+            }
+        }
+
+
+        myCar.increment(50000)
+        myCar.model = "Mercedes"
+        document.write(myCar.value, myCar.model)
+    </script>
+
+</body>
+
+</html>

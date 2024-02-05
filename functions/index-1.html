@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer,
+        section,
+        nav {
+            background-color: lightblue;
+        }
+
+        nav {
+            background-color: greenyellow;
+        }
+
+        section {
+            background-color: coral;
+        }
+
+        footer {
+            background-color: lightgreen;
+        }
+
+        section div.container {
+            height: 100vh;
+            background-color: red;
+            display: flex;
+        }
+
+        section div.container>div {
+            flex: 1;
+            border: 1px solid #333;
+            background-color: white;
+        }
+
+        section div.container>div:first-child() div.container {
+            width: 1140px;
+            height: 300px;
+            background-color: lightcoral;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            margin: 0 auto;
+            width: 1140px;
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+        }
+
+        nav ul li {
+            flex: 1;
+        }
+
+        nav ul li a {
+            background-color: gold;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            border-right: 1px solid #333;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a[href="#1"] {
+            color: purple;
+            font-size: larger;
+        }
+
+        nav ul li:last-child a {
+            border-right: none;
+        }
+
+        @media(max-width:990px) {
+
+            div.container,
+            nav ul {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            header
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#1">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+
+    </nav>
+    <section>
+        <div class="container">
+            <div>
+                1.
+            </div>
+            <div>2.</div>
+            <div>3.</div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            footer
+        </div>
+    </footer>
+</body>
+
+</html>

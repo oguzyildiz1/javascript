@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+
+    <script>
+        function textType(first_html_tag = "<br>", text = "", last_html_tag = "<br />") {
+            document.write(first_html_tag + text + last_html_tag);
+        }
+
+        textType("selamlar nasilsiniz?");
+        textType("Bugün iyi bir gün...");
+
+        textType("", "<h1>");
+        textType("Güzel Günler", "</h1>");
+
+        textType("<p>" + "Bugün iyi bir gün. Lütfen para harcamayınız. Bedava ulaşımı kullanınız..." + "</p>");
+
+        const list = document.getElementsByTagName("p");
+        list[0].style.backgroundColor = "red";
+        list[0].style.fontSize = "30px";
+        list[0].style.border = "1px solid #333";
+        list[0].style.color = "white";
+
+        console.log(list[0]);
+
+
+    </script>
+</body>
+
+</html>
