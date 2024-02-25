@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body>
+
+    <section id="dice-roller">
+        <!-- main container start --------------->
+        <div class="grand-container">
+            <!---- first part ------->
+            <h1>Dice Roller</h1>
+            <div class="main-container">
+                <label for="dice-amount"># of dice</label>
+                <input type="number" id="dice-quantity" name="dice-quantity" value="1" min="1" max="6">
+                <button id="button" onclick="rollDices()">Roll Dice</button>
+            </div>
+            <!---- first part end ------->
+
+            <div id="dice-rolls"></div>
+            <div id="images">
+                <!-- <img src="images/1.png" alt=""> -->
+            </div>
+        </div>
+        <!-- main container end ------------------>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
